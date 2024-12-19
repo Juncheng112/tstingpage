@@ -1,0 +1,197 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Modern font for elegance */
+    line-height: 1.8;
+    background: linear-gradient(135deg, #4A90E2, #464646); /* Dynamic blue-green gradient */
+    color: #222; /* Neutral dark text for readability */
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #021142, #07b69f); /* Vibrant gradient header */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for impact */
+    position: sticky; /* Keeps the header visible on scroll */
+    top: 0;
+    z-index: 1000;
+    font-size: 11px;
+    display: flex;
+    justify-content: space-between; /* Space between h1 and img */
+    align-items: center; /* Vertically center the text */
+}
+
+/* Image Styling */
+header img {
+    position: absolute;
+    top: 0.1px; /* Adjust top position */
+    right: 5px; /* Adjust right position */
+    max-width: 10%; /* Ensure the image size is appropriate */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(3, 0, 0, 0.3); /* Subtle text shadow for depth */
+    animation: fadeInDown 1s ease-in-out;
+}
+
+/* Main Section Styling */
+main {
+    background: rgba(255, 255, 255, 0.9); /* Transparent white for elegance */
+    padding: 30px;
+    margin: 40px auto;
+    width: 80%;
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deep shadow for floating effect */
+    animation: fadeInUp 1.5s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+
+main:hover {
+    transform: scale(1.02); /* Subtle zoom effect on hover */
+}
+
+main h2 {
+    color: #05668D; /* Deep teal for elegance */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #07b69f; /* Stylish underline */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+main p {
+    font-size: 1.3em;
+    color: #2F4858; /* Muted dark color for readability */
+    line-height: 1.8;
+}
+
+/* Additional Styles for Content */
+main ul {
+    font-size: 1.3em;
+    color: #2F4858;
+    line-height: 1.8;
+    margin-left: 20px;
+}
+
+main ul li {
+    list-style-type: disc;
+}
+
+main ol {
+    font-size: 1.3em;
+    color: #2F4858;
+    line-height: 1.8;
+    margin-left: 20px;
+}
+
+main ol li {
+    list-style-type: decimal;
+}
+
+/* Footer Styling */
+footer {
+    background: #021142; /* Rich dark blue */
+    color: #ebebeb; /* Complementary light green text */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Shadow above footer */
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    main h2 {
+        font-size: 2em;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
+
+/* Additional Styling for Saline Solution Production Content */
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+ul,
+ol {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Content-specific styles */
+h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #021142; /* Dark blue for headers */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 2.5em;
+    color: #05668D;
+}
+
+p {
+    color: #2F4858; /* Muted dark color for readability */
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+ul,
+ol {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-left: 20px;
+}
+
+ul li,
+ol li {
+    margin-bottom: 10px;
+}
