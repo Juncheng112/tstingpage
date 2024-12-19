@@ -29,14 +29,14 @@ header img {
     position: absolute;
     top: 0.1px; /* Adjust top position */
     right: 5px; /* Adjust right position */
-    max-width: 10%; /* Ensure the image size is appropriate */
+    max-width: 30%; /* Ensure the image size is appropriate */
     height: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
 header h1 {
     margin: 0;
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     text-shadow: 2px 2px 5px rgba(3, 0, 0, 0.3); /* Subtle text shadow for depth */
     animation: fadeInDown 1s ease-in-out;
